@@ -22,7 +22,7 @@ public class ScannerEx {
 		System.out.println(a + " :: " + b);
 
 		// close : Scanner 객체를 닫는 메소드 (메모리 해제)
-		sc.close();
+
 		
 		// Scanner 객체가 닫힌 후에는 Scanner를 통한 입력을 할 수 없다.
 		
@@ -40,8 +40,20 @@ public class ScannerEx {
 		 * 결과물 예시 : 입력하신 숫자 8은(는) 짝수입니다.
 		 * 
 		 */
+		
+		
+		System.out.println("정수를 입력해 주세요. : ");
+		
+		int num = sc.nextInt();
+		
+		//int num = 33;
+		
+		String numResult; 
+		numResult = ( num % 2 == 0 ) ? "짝수" : "홀수";
+		
+		System.out.println("입력하신 숫자 " + num + "은(는) "+ numResult + "입니다.");
 
-
+		sc.close();
 	}
 
 }

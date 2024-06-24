@@ -25,8 +25,44 @@ public class Switch03 {
 		System.out.print("정수 2 : ");
 		int num2 = sc.nextInt();
 
+	
+//		switch (oper){
+//		case "+":
+//			System.out.println(num1 + oper + num2 + " 은(는) " + (num1 + num2));
+//			break;
+//		case "-":
+//			System.out.println(num1 + oper + num2 + " 은(는) " + (num1 - num2));
+//			break;
+//			
+//		case "*":
+//			System.out.println(num1 + oper + num2 + " 은(는) " + (num1 * num2));
+//			break;
+//			
+//		case "/":
+//			System.out.println(num1 + oper + num2 + " 은(는) " + (num1 / num2));
+//			break;
+//	
+//		default :
+//			System.out.println("잘못된 입력입니다.");
+//		}
 
-
+		
+		if ("+".equals(oper)) {
+			System.out.println(num1 + oper + num2 + " 은(는) " + (num1 + num2));
+		}
+		else if ("-".equals(oper)) {
+			System.out.println(num1 + oper + num2 + " 은(는) " + (num1 - num2));			
+		}
+		else if ("*".equals(oper)) {
+			System.out.println(num1 + oper + num2 + " 은(는) " + (num1 * num2));			
+		}
+		else if ("/".equals(oper)) {
+			System.out.println(num1 + oper + num2 + " 은(는) " + (num1 / num2));			
+		}
+		else {
+			System.out.println("입력값을 확인");			
+		}
+		
 		sc.close();
 
 	}
