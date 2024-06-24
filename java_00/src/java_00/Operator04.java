@@ -77,7 +77,7 @@ public class Operator04 {
 		
 		String subResult;
 		
-		float average = (kor + eng + math) / 3 ;
+		double average = (kor + eng + math) / 3 ;
 		subResult = (average >= 85) ? "합격": "불합격";
 		
 		
