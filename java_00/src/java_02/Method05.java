@@ -31,6 +31,8 @@ public class Method05 {
 		else {
 			System.out.println("1보다 작은 숫자는 계산할 수 없습니다.");
 		}
+		
+		sc.close();
 	}
 	
 	
