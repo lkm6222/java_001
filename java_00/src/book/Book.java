@@ -19,6 +19,12 @@ public class Book {
 	private int page;
 	
 	
+	public Book() {}
+	public Book(String arg1, String arg2) {
+		this.title = arg1;
+		this.author = arg2;
+	}
+	
 	public String bookInfo(){
 		String result = "";
 		
