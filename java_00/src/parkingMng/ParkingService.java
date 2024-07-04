@@ -115,18 +115,27 @@ public class ParkingService {
 		int location = sc.nextInt();
 		String locationStr = String.valueOf(location);
 
-		parkingDAO.deleteParking(locationStr);
+		boolean flag = parkingDAO.deleteParking(locationStr);
 		
-		
-		
-		System.out.println("출차 완료!! 안녕히 가세요.");
-		System.out.println();
-		
+		//if(!flag)
+		if(flag == true) {
+			System.out.println("출차 완료!! 안녕히 가세요.");
+			System.out.println();
+		}
+		else {
+			System.out.println("주차된 차량이 없습니다. 안녕히가세요.");
+		}
 
-//		if(count == parkingDAO.ROW * parkingDAO.COL) {
-//			System.out.println("차량이 존재하지 않습니다.");
-//			System.out.println("차량 번호 확인 후 다시 시도해 주세요.");
-//		}
-		
+
+
+
+
+
+
+		//		if(count == parkingDAO.ROW * parkingDAO.COL) {
+		//			System.out.println("차량이 존재하지 않습니다.");
+		//			System.out.println("차량 번호 확인 후 다시 시도해 주세요.");
+		//		}
+
 	}
 }
