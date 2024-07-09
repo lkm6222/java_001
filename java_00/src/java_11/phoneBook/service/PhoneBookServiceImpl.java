@@ -139,11 +139,9 @@ public class PhoneBookServiceImpl implements PhoneBookService {
 			case 0:
 				//프로그램 종료
 				System.out.println("시스템 종료 !!");
-				System.exit(0);
-				break;
+				return;
 			default:
 				System.out.println("0~5까지의 숫자만 입력해주세요.");
-				break;
 			}
 
 		}
@@ -267,9 +265,9 @@ public class PhoneBookServiceImpl implements PhoneBookService {
 
 		if(!phoneBookDAO.dupCheck(name)) {
 			System.out.println("전화번호부에 등록된 정보가 없습니다.");
-			
+
 		} else {
-			
+
 			System.out.println("이름 : " + phone.getName() + "\t 전화번호 : " + phone.getTel() + "\t 주소 : " + phone.getAddr());
 
 		}
